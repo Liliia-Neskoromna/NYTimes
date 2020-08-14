@@ -1,6 +1,0 @@
-framework module Pods_TestForVRGSoft {
-  umbrella header "Pods-TestForVRGSoft-umbrella.h"
-
-  export *
-  module * { export * }
-}

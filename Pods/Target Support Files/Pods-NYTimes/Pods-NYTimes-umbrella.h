@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_TestForVRGSoftVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_TestForVRGSoftVersionString[];
+FOUNDATION_EXPORT double Pods_NYTimesVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_NYTimesVersionString[];
 
