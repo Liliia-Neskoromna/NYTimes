@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		22110F3B24E6DF9900A96590 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22110F3A24E6DF9900A96590 /* CustomTabBarController.swift */; };
 		22110F3D24E6E0F600A96590 /* ArticlesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22110F3C24E6E0F600A96590 /* ArticlesRequest.swift */; };
+		22110F4124E6E29300A96590 /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22110F4024E6E29300A96590 /* PersistanceService.swift */; };
+		22110F4424E6EFB500A96590 /* ManagerArticlesJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22110F4324E6EFB500A96590 /* ManagerArticlesJSON.swift */; };
+		22110F4624E7153E00A96590 /* ArtisleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22110F4524E7153E00A96590 /* ArtisleModel.swift */; };
 		226854D324E5678A0009D2E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226854D224E5678A0009D2E1 /* AppDelegate.swift */; };
 		226854D524E5678A0009D2E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226854D424E5678A0009D2E1 /* SceneDelegate.swift */; };
 		226854D724E5678A0009D2E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226854D624E5678A0009D2E1 /* ViewController.swift */; };
@@ -21,7 +24,10 @@
 /* Begin PBXFileReference section */
 		22110F3A24E6DF9900A96590 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		22110F3C24E6E0F600A96590 /* ArticlesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesRequest.swift; sourceTree = "<group>"; };
-		226854CF24E5678A0009D2E1 /* TestForVRGSoft.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForVRGSoft.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22110F4024E6E29300A96590 /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
+		22110F4324E6EFB500A96590 /* ManagerArticlesJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerArticlesJSON.swift; sourceTree = "<group>"; };
+		22110F4524E7153E00A96590 /* ArtisleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtisleModel.swift; sourceTree = "<group>"; };
+		226854CF24E5678A0009D2E1 /* NYTimes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYTimes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226854D224E5678A0009D2E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		226854D424E5678A0009D2E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		226854D624E5678A0009D2E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				22110F3C24E6E0F600A96590 /* ArticlesRequest.swift */,
+				22110F4324E6EFB500A96590 /* ManagerArticlesJSON.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -63,10 +70,26 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		22110F4224E6E29C00A96590 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				22110F4024E6E29300A96590 /* PersistanceService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		22110F4724E7154300A96590 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22110F4524E7153E00A96590 /* ArtisleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		226854C624E5678A0009D2E1 = {
 			isa = PBXGroup;
 			children = (
-				226854D124E5678A0009D2E1 /* TestForVRGSoft */,
+				226854D124E5678A0009D2E1 /* NYTimes */,
 				226854D024E5678A0009D2E1 /* Products */,
 				D657B47569BD20121777BB82 /* Pods */,
 				65B6CC2D73B721E8CBE0D62B /* Frameworks */,
@@ -76,24 +99,26 @@
 		226854D024E5678A0009D2E1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				226854CF24E5678A0009D2E1 /* TestForVRGSoft.app */,
+				226854CF24E5678A0009D2E1 /* NYTimes.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		226854D124E5678A0009D2E1 /* TestForVRGSoft */ = {
+		226854D124E5678A0009D2E1 /* NYTimes */ = {
 			isa = PBXGroup;
 			children = (
 				226854D224E5678A0009D2E1 /* AppDelegate.swift */,
 				226854D424E5678A0009D2E1 /* SceneDelegate.swift */,
+				22110F4724E7154300A96590 /* Model */,
 				22110F3F24E6E1E900A96590 /* Controller */,
 				22110F3E24E6E1DF00A96590 /* Request */,
+				22110F4224E6E29C00A96590 /* Service */,
 				226854D824E5678A0009D2E1 /* Main.storyboard */,
 				226854DB24E5678B0009D2E1 /* Assets.xcassets */,
 				226854DD24E5678B0009D2E1 /* LaunchScreen.storyboard */,
 				226854E024E5678B0009D2E1 /* Info.plist */,
 			);
-			path = TestForVRGSoft;
+			path = NYTimes;
 			sourceTree = "<group>";
 		};
 		65B6CC2D73B721E8CBE0D62B /* Frameworks */ = {
@@ -116,9 +141,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		226854CE24E5678A0009D2E1 /* TestForVRGSoft */ = {
+		226854CE24E5678A0009D2E1 /* NYTimes */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 226854E324E5678B0009D2E1 /* Build configuration list for PBXNativeTarget "TestForVRGSoft" */;
+			buildConfigurationList = 226854E324E5678B0009D2E1 /* Build configuration list for PBXNativeTarget "NYTimes" */;
 			buildPhases = (
 				AD54CBE410284208FC81B1E4 /* [CP] Check Pods Manifest.lock */,
 				226854CB24E5678A0009D2E1 /* Sources */,
@@ -130,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = TestForVRGSoft;
+			name = NYTimes;
 			productName = TestForVRGSoft;
-			productReference = 226854CF24E5678A0009D2E1 /* TestForVRGSoft.app */;
+			productReference = 226854CF24E5678A0009D2E1 /* NYTimes.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +175,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 226854CA24E5678A0009D2E1 /* Build configuration list for PBXProject "TestForVRGSoft" */;
+			buildConfigurationList = 226854CA24E5678A0009D2E1 /* Build configuration list for PBXProject "NYTimes" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -163,7 +188,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				226854CE24E5678A0009D2E1 /* TestForVRGSoft */,
+				226854CE24E5678A0009D2E1 /* NYTimes */,
 			);
 		};
 /* End PBXProject section */
@@ -230,9 +255,12 @@
 			files = (
 				226854D724E5678A0009D2E1 /* ViewController.swift in Sources */,
 				22110F3D24E6E0F600A96590 /* ArticlesRequest.swift in Sources */,
+				22110F4624E7153E00A96590 /* ArtisleModel.swift in Sources */,
 				226854D324E5678A0009D2E1 /* AppDelegate.swift in Sources */,
 				22110F3B24E6DF9900A96590 /* CustomTabBarController.swift in Sources */,
+				22110F4424E6EFB500A96590 /* ManagerArticlesJSON.swift in Sources */,
 				226854D524E5678A0009D2E1 /* SceneDelegate.swift in Sources */,
+				22110F4124E6E29300A96590 /* PersistanceService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,13 +407,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97J4XJP6TX;
-				INFOPLIST_FILE = TestForVRGSoft/Info.plist;
+				INFOPLIST_FILE = NYTimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Liliia.TestForVRGSoft;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Liliia.-NYTimes";
+				PRODUCT_NAME = NYTimes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -398,13 +426,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97J4XJP6TX;
-				INFOPLIST_FILE = TestForVRGSoft/Info.plist;
+				INFOPLIST_FILE = NYTimes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Liliia.TestForVRGSoft;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "Liliia.-NYTimes";
+				PRODUCT_NAME = NYTimes;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -413,7 +441,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		226854CA24E5678A0009D2E1 /* Build configuration list for PBXProject "TestForVRGSoft" */ = {
+		226854CA24E5678A0009D2E1 /* Build configuration list for PBXProject "NYTimes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				226854E124E5678B0009D2E1 /* Debug */,
@@ -422,7 +450,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		226854E324E5678B0009D2E1 /* Build configuration list for PBXNativeTarget "TestForVRGSoft" */ = {
+		226854E324E5678B0009D2E1 /* Build configuration list for PBXNativeTarget "NYTimes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				226854E424E5678B0009D2E1 /* Debug */,

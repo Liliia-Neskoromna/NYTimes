@@ -7,6 +7,7 @@ target 'TestForVRGSoft' do
 
   # Pods for TestForVRGSoft
   pod 'Alamofire', '~> 5.2'
-  
+  pod 'SwiftyJSON'
+  pod 'SDWebImage', '~> 5.0'
 
 end
