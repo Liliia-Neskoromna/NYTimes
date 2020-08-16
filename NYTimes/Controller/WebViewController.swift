@@ -27,6 +27,7 @@ class WebViewController: UIViewController {
         if let urlUnwrappted = url {
             webView?.load(URLRequest(url: urlUnwrappted))
             webView?.allowsBackForwardNavigationGestures = true
+            
         }
     }
 }
