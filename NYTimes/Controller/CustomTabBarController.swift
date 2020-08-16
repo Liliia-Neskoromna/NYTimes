@@ -11,19 +11,33 @@ import Alamofire
 
 class CustomTabBarController: UITabBarController {
     
-    let sharedRequest = ArticlesRequest()
-//    let sharedRequest = TestRequest()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        sharedRequest.loadData()
-//        let layout = UICollectionViewFlowLayout()
-//        let emailedArticles = ArticlesMainViewController()
-//        let mostEmailedNavController = UINavigationController(rootViewController: emailedArticles)
-//        mostEmailedNavController.tabBarItem.title = "Most Emailed"
         
-        (viewController as? ArticlesMainViewController).currentControllerType = .articles
-
+        let layout = UICollectionViewFlowLayout()
+        let mainViewController = ArticlesMainViewController()
+        let mostEmailedNavController = UINavigationController(rootViewController: mainViewController)
+        mostEmailedNavController.tabBarItem.title = "Most Emailed"
+        
+        //        let mostSharedNavController = UINavigationController(rootViewController: mainViewController)
+        //        mostEmailedNavController.tabBarItem.title = "Most Shared"
+        
+        //        viewControllers = [mostEmailedNavController,
+        //                           createDummyNavControllerWithTitles(title: "Most Shared"),
+        //                           createDummyNavControllerWithTitles(title: "Most Emailed"),
+        //                           createDummyNavControllerWithTitles(title: "Most Viewed"),
+        //        ]
+        
     }
     
+    //    private func createDummyNavControllerWithTitles(title: String) -> UINavigationController {
+    //        let viewController = UIViewController()
+    //        let navController = UINavigationController(rootViewController: viewController)
+    //        navController.tabBarItem.title = title
+    //        return navController
+    //
+    //        (viewController as? ArticlesMainViewController).currentControllerType = .articles
+    
 }
+
+
