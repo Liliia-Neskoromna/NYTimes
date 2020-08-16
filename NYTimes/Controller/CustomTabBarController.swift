@@ -12,9 +12,18 @@ import Alamofire
 class CustomTabBarController: UITabBarController {
     
     let sharedRequest = ArticlesRequest()
+//    let sharedRequest = TestRequest()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sharedRequest.loadData()
+//        sharedRequest.loadData()
+//        let layout = UICollectionViewFlowLayout()
+//        let emailedArticles = ArticlesMainViewController()
+//        let mostEmailedNavController = UINavigationController(rootViewController: emailedArticles)
+//        mostEmailedNavController.tabBarItem.title = "Most Emailed"
+        
+        (viewController as? ArticlesMainViewController).currentControllerType = .articles
+
     }
+    
 }

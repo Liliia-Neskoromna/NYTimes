@@ -11,19 +11,17 @@ import Foundation
 struct ArticleViewModel {
     let id: Int
     let title: String
-    let publishedDate: String
+    //let publishedDate: String
     let imageUrl: String
     
     
-    init(article: Article) {
-        
-        self.id = article.id
-        self.title = article.title
-        self.publishedDate = article.publishedDate
-        let mediaMetadata = article.media.first?.mediaMetadata
-        
-        self.imageUrl = mediaMetadata?.filter {
-            $0.format == "mediumThreeByTwo210"
-        }.first?.url as! String
-    }
+//    init(article: Article) {
+//        
+//        self.id = article.id
+//        self.title = article.title
+//        //self.publishedDate = article.publishedDate
+//       // let mediaMetadata = article.media.first?.mediaMetadata
+//        
+//        //self.imageUrl = mediaMetadata?.first?.url as! String
+//    }
 }
