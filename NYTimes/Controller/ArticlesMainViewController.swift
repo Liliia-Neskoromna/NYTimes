@@ -60,7 +60,8 @@ class ArticlesMainViewController: UITableViewController {
         
         if sender.isSelected {
             articles[index].isSelected = false
-            
+            let key = articles[index].id
+            persistence.deleteArticle(key: key)
         } else {
             
             let entity = NSEntityDescription.insertNewObject(forEntityName: "CoreDataEntity", into: context)

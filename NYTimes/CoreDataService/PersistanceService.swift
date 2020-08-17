@@ -55,5 +55,20 @@ class PersistanceService {
         
         return arrayId
     }
+    
+    func deleteArticle(key: Int) -> Void {
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CoreDataEntity")
+        let predicate = NSPredicate(format: "key = \(NSNumber(value:key))")
+        fetchRequest.predicate = predicate
+        
+        do {
+
+            let results = try context.fetch(fetchRequest) as! [CoreDataEntity]
+            context.delete(results[0])
+            try context.save()
+        } catch let error as NSError {
+            print(error)
+        }
+    }
 }
 
