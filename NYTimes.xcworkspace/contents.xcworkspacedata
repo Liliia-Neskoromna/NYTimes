@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:NYTimes/CoreDataEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:NYTimes/CoreDataEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:NYTimes.xcodeproj">
    </FileRef>
    <FileRef
