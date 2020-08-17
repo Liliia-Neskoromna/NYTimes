@@ -23,6 +23,7 @@ class WebViewController: UIViewController {
         loadWebView()
     }
         
+    
     func loadWebView() {
         if let urlUnwrappted = url {
             webView?.load(URLRequest(url: urlUnwrappted))
