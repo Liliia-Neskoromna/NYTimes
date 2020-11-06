@@ -98,8 +98,4 @@ class FavoriteController: ArticlesMainViewController {
     }
 }
 
-extension FavoriteController {
-
-}
-
 	

@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  TestForVRGSoft
+//  NYTimes
 //
 //  Created by Lilia on 8/13/20.
 //  Copyright © 2020 Liliia. All rights reserved.
@@ -47,7 +47,6 @@ class ArticlesMainViewController: UITableViewController {
             }
         }
     }
-    
     
     var currentControllerType: CurrentControllerType = .mostEmailed
     
@@ -105,7 +104,7 @@ class ArticlesMainViewController: UITableViewController {
     }
     
     func loadData() {
-        AF.request(currentControllerType.urlString as! URLConvertible, method: .get, parameters: params).responseJSON { (response) in
+        AF.request(currentControllerType.urlString as URLConvertible, method: .get, parameters: params).responseJSON { (response) in
             
             switch response.result {
             case .success:
@@ -135,7 +134,6 @@ class ArticlesMainViewController: UITableViewController {
                 }
             case let .failure(error):
                 print(error)
-                
             }
         }
     }

@@ -5,10 +5,9 @@ target 'NYTimes' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for TestForVRGSoft
+  # Pods for NYTimes
   pod 'Alamofire', '~> 5.2'
   pod 'AlamofireImage', '~> 4.1'
   pod 'SwiftyJSON'
-  pod 'SDWebImage', '~> 5.0'
 
 end
